@@ -1,4 +1,4 @@
-# **SMOC-Net**  
+# **NSFA-Net**  
 **Noise-Aware Epileptic Seizure Prediction  Network via Self-Attention Feature Alignment**  
 
 A nosie-aware epileptic seizure prediction network that aligns multi-layer features and maintains the contextual consistency, achieving SOTA performance.
