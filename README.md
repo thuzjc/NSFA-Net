@@ -31,7 +31,7 @@ python test_Kaggle.py --patient_id 1 --device_number 0 --batch_size 200 --ckpt_d
 
 Please replace `NSFA_ckpt` in the command with the actual path of your model checkpoint. We provide our model checkpoints, which can be downloaded via the following link:
 
-[NSFA Checkpoints Download Link](https://pan.baidu.com/s/16q-m8yD4HyqNG-LVxN3m4g?pwd=j39t)
+[NSFA Checkpoints Download Link](https://pan.baidu.com/s/1iqceQj95tpzETs7C4AluFQ?pwd=792j)
 
 ## 📖 Citation
 ```bash
