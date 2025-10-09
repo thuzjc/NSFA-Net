@@ -364,11 +364,15 @@ if __name__ == "__main__":
     parser.add_argument("--part", type = int, default = 0, metavar = 'which part to test')
     parser.add_argument('--ckpt_dir', type = str, default = '/mnt/share/zjc/model/KAGGLE_new/NSFA_resave')
     parser.add_argument("--auto_threshold", type = bool, default = False, metavar = 'whether use auto threshold')
-    parser.add_argument('--data_dir', type=str, default = '../Kaggle_new_split', metavar='data directory')
+    parser.add_argument('--data_dir', type=str, default = 'Kaggle_dataset', metavar='data directory')
 
     args = parser.parse_args()
     part = args.part
-
+    if 'target_preictal_interval' == 60:
+        args.data_dir = 'Kaggle_dataset_60'
+    elif 'target_preictal_interval' == 30:
+        args.data_dir = 'Kaggle_dataset_30'
+        
     model_name=args.model_name
 
     used_model=args.used_model
