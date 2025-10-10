@@ -10,9 +10,9 @@ This project provides the preprocessed Kaggle dataset, along with the code for m
 
 We provide the preprocessed Kaggle dataset for model training, which was preprocessed as detailed in the paper.  The data is available for download via the link below:
 
-[Download Link for Preprocessed Kaggle data with the SOP set to 60 minutes](https://pan.baidu.com/s/12aW93-VMInjGH0eU-xmYrg?pwd=pqnw)
+[Download Link for Preprocessed Kaggle data with SOP set to 60 minutes](https://pan.baidu.com/s/12aW93-VMInjGH0eU-xmYrg?pwd=pqnw)
 
-[Download Link for Preprocessed Kaggle data with the SOP set to 30 minutes](https://pan.baidu.com/s/1YUrX_WmwsSGxMOxTOs1b2Q?pwd=4f47)
+[Download Link for Preprocessed Kaggle data with SOP set to 30 minutes](https://pan.baidu.com/s/1YUrX_WmwsSGxMOxTOs1b2Q?pwd=4f47)
 
 ### **2. Run Training**
 
@@ -33,9 +33,9 @@ python test_Kaggle.py --patient_id 1 --device_number 0 --batch_size 200 --ckpt_d
 
 Please replace `NSFA_ckpt` in the command with the actual path of your model checkpoint. We provide our model checkpoints, which can be downloaded via the following link:
 
-[Download Link for NSFA Checkpoints with the SOP set to 60 minutes](https://pan.baidu.com/s/1iqceQj95tpzETs7C4AluFQ?pwd=792j)
+[Download Link for NSFA Checkpoints with SOP set to 60 minutes](https://pan.baidu.com/s/1iqceQj95tpzETs7C4AluFQ?pwd=792j)
 
-[Download Link for NSFA Checkpoints with the SOP set to 30 minutes]( https://pan.baidu.com/s/154zBFvzSdpwyPv0owHJtrQ?pwd=m2pj)
+[Download Link for NSFA Checkpoints with SOP set to 30 minutes]( https://pan.baidu.com/s/154zBFvzSdpwyPv0owHJtrQ?pwd=m2pj)
 
 ## 📖 Citation
 ```bash
