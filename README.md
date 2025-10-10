@@ -6,13 +6,17 @@ A nosie-aware epileptic seizure prediction network that aligns multi-layer featu
 This project provides the preprocessed Kaggle dataset, along with the code for model training and testing, and the trained model checkpoints.
 
 ## **🚀 Quick Start**
-### **1. Prepare Datasets**
+### **1. Prepare Dataset**
 
-We provide the preprocessed Kaggle dataset for model training, which was preprocessed as detailed in the paper.  The data is available for download via the link below:
+We provide code for preprocessing the raw Kaggle dataset, which includes downsampling, segmentation, and STFT transformation. Use the following command to run the dataset preprocessing:
 
-[Download Link for Preprocessed Kaggle data with SOP set to 60 minutes](https://pan.baidu.com/s/12aW93-VMInjGH0eU-xmYrg?pwd=pqnw)
+```bash
+python Kaggle_preprocess_30.py --patient_id 1
+```
 
-[Download Link for Preprocessed Kaggle data with SOP set to 30 minutes](https://pan.baidu.com/s/1YUrX_WmwsSGxMOxTOs1b2Q?pwd=4f47)
+Please download the raw Kaggle dataset via the following link:
+
+[Download Link for the raw Kaggle dataset](https://www.kaggle.com/c/seizure-prediction/data)
 
 ### **2. Run Training**
 
