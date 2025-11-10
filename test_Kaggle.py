@@ -368,10 +368,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     part = args.part
-    if 'target_preictal_interval' == 60:
-        args.data_dir = 'Kaggle_dataset_60'
-    elif 'target_preictal_interval' == 30:
-        args.data_dir = 'Kaggle_dataset_30'
         
     model_name=args.model_name
 

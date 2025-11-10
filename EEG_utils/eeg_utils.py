@@ -199,6 +199,10 @@ def GetModel(input_channel, device_number, model_name, dataset_name, position_em
     
     if model_name == 'NSFA':
         model = swin_AlignFA_noRRBtest(num_classes = 2, input_channel = input_channel)
+    elif model_name == 'swin_AlignFA_noRRBtest':
+        model = swin_AlignFA_noRRBtest(num_classes = 2, input_channel = input_channel)
+    elif model_name == 'swin_AlignFA_Third_noRRB':
+        model = swin_AlignFA_noRRBtest(num_classes = 2, input_channel = input_channel)
     # elif model_name == "EEG_Transformer":
     #     model = eegt()
     # elif model_name == "restv2_tiny":
