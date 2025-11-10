@@ -3,7 +3,7 @@
 
 A noise-aware epileptic seizure prediction network that aligns multi-layer features and maintains the contextual consistency, achieving SOTA performance.
 
-This project provides the preprocessed Kaggle dataset, along with the code for model training and testing, and the trained model checkpoints.
+This project provides the code for model training and testing.
 
 ## **🚀 Quick Start**
 ### **1. Prepare Dataset**
