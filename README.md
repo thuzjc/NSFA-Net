@@ -36,3 +36,4 @@ python test_Kaggle.py --patient_id 1 --device_number 0 --batch_size 200 --ckpt_d
 ```
 
 Please replace the `ckpt_dir` and the `data_dir` in the command with the actual path of your model checkpoint and preprocessed data. 
+
