@@ -383,11 +383,6 @@ if __name__ == "__main__":
 
     moving_average_length=args.moving_average_length
 
-    # moving_average_length = 6
-
-    # moving_average_length = 25
-
-    # moving_average_length = 5
 
     target_preictal_interval=args.target_preictal_interval
 
@@ -427,7 +422,7 @@ if __name__ == "__main__":
 
     print("dataset : {} | seizure : {} filter : {} | threshold : {} | persistence : {} | tw0 : {} | tw : {}".format(args.dataset_name,
 
-                    seizure_count, moving_average_length*step_preictal, threshold, persistence_second, tw0*3600, tw*3600))
+                    seizure_count, moving_average_length, threshold, persistence_second, tw0*3600, tw*3600))
 
   
 
@@ -516,7 +511,11 @@ if __name__ == "__main__":
         device = torch.device(f"cuda:{device_number}" )
         
         print(f'Loading ckpt from path:{ckpt_path}')
-        model.load_state_dict(torch.load(ckpt_path, map_location=device)['state_dict'])
+        ckpt = torch.load(ckpt_path, map_location=device)
+        if 'state_dict' in ckpt:
+            model.load_state_dict(ckpt['state_dict'])
+        else:
+            model.load_state_dict(ckpt)
 
         #set cuda
 
@@ -641,7 +640,7 @@ if __name__ == "__main__":
 
         auc_value3=roc_auc_score(y_true, predicting_probablity_smooth)
 
-        # print("AUC3", auc_value3)
+        print("AUC3", auc_value3)
 
         AUC3_list.append(auc_value3)
 
@@ -759,7 +758,7 @@ if __name__ == "__main__":
 
             len(true_alarm_list), len(false_alarm_list), SEN_list[-1],
 
-            FPR, best_auc,
+            FPR, auc_value3,
 
             true_alarm_list[0] if true_alarm_list else 0,  # 避免空列表错误
 
@@ -769,6 +768,6 @@ if __name__ == "__main__":
 
 
     #calculate p-value
-    save_data = {'ID' :patient_name, 'AUROC': np.mean(AUC_list), 'SN': np.mean(SEN_list), 'FPR': np.mean(FPR_list)}
+    save_data = {'ID' :patient_name, 'AUROC': np.mean(AUC3_list), 'SN': np.mean(SEN_list), 'FPR': np.mean(FPR_list)}
     filename = f'{ckpt_dir}/mine_result.xlsx'
     add_data_to_excel(filename, save_data)

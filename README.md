@@ -1,7 +1,5 @@
 # **NSFA-Net**  
-**Noise-Aware Epileptic Seizure Prediction  Network via Self-Attention Feature Alignment**  
-
-A noise-aware epileptic seizure prediction network that aligns multi-layer features and maintains the contextual consistency, achieving SOTA performance.
+**A noise-aware epileptic seizure prediction network** that aligns multi-layer features and maintains the contextual consistency, achieving SOTA performance.
 
 This project provides the code for model training and testing.
 
