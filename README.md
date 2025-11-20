@@ -36,15 +36,3 @@ python test_Kaggle.py --patient_id 1 --device_number 0 --batch_size 200 --ckpt_d
 ```
 
 Please replace the `ckpt_dir` and the `data_dir` in the command with the actual path of your model checkpoint and preprocessed data. 
-
-## 📖 Citation
-```bash
-@ARTICLE{Dong2025NSFA,
-  author={Dong, Qiulei and Wang, Zhixi and Gao, Mengyu},
-  journal={IEEE Journal of Biomedical and Health Informatics}, 
-  title={Noise-Aware Epileptic Seizure Prediction Network via Self-Attention Feature Alignment}, 
-  year={2025},
-  pages={1-13},
-  keywords={Feature extraction;Electroencephalography;Time-frequency analysis;Data mining;Training;Signal to noise ratio;Transformers;Aggregates;Bioinformatics;Sensitivity;Epileptic seizure prediction;feature alignment;noise-aware regularizer},
-  doi={10.1109/JBHI.2025.3579229}}
-```
