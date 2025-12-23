@@ -360,7 +360,7 @@ class Trainer:
 
         
         if len(true_alarm_list) > 0:
-            SN = 1
+            SN = 1   
         else:
             SN = 0
         print('====> Test set loss: {:.4f}, AUC_soft {:.4f}, AUC_smooth {:.4f}, FPR {:.4f} per hour, SN {:.4f}'.format(
