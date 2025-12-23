@@ -428,7 +428,7 @@ class Trainer:
             self.args.start_epoch = checkpoint['epoch']
             self.model.load_state_dict(checkpoint['state_dict'])
             self.optimizer.load_state_dict(checkpoint['optimizer'])
-            print("Checkpoint loaded successfully from '{}' at (epoch {})\n"
+            print("Checkpoint loaded successfully from '{}' at (epoch {})\n"   
                   .format(self.args.checkpoint_dir, checkpoint['epoch']))
         except:
-            print("No checkpoint exists from '{}'. Skipping...\n".format(self.args.checkpoint_dir))
+            print("No checkpoint exists from '{}'. Skipping...\n".format(self.args.checkpoint_dir))      

@@ -209,7 +209,7 @@ if __name__ == "__main__":
         else:
             train_acc_list, train_loss_list = main(train, test, LOO, patient_name, args)
     
-    # a = [seizure_num]
+    # a = [seizure_num]    
     # for LOO in a:
     #     test = LOO
     #     train = list(set(seizure_list[str(patient_id)]) - set([test]))
